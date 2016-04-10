@@ -35,15 +35,15 @@ class AuthController extends Controller
             // ...
         ));
     }
-
     /**
-     * @Route("/outlogin")
+     * @Route("/logout", name="logout")
      */
-    public function outloginAction()
+    public function logoutAction()
     {
-        return $this->render('AppBundle:Auth:outlogin.html.twig', array(
+        return $this->render('AppBundle:Auth:login.html.twig', array(
             // ...
         ));
     }
+
 
 }

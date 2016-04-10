@@ -277,6 +277,8 @@ class User implements UserInterface
     public function eraseCredentials()
     {
         //return
+
+        $this->plainPassword = null;
         // TODO: Implement eraseCredentials() method.
     }
 }
